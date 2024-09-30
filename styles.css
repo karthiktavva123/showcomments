@@ -1,0 +1,100 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#show-comments-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#show-comments-btn:hover {
+    background-color: #45a049;
+}
+
+/* Left Navigation Bar */
+.left-navbar {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 200px;
+    background-color: #f4f4f4;
+    height: 100%;
+    padding: 20px;
+}
+
+.left-navbar ul {
+    list-style-type: none;
+}
+
+.left-navbar ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.left-navbar ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    padding-top: 80px; /* for top navbar */
+}
+
+/* Comment Section */
+#comments-section {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 600px;
+    height: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chat-box {
+    height: 80%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+}

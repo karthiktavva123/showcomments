@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Paper with Comments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="top-navbar">
+        <h1>Research Paper Title</h1>
+        <button id="show-comments-btn" onclick="toggleComments()">Show Comments</button>
+    </div>
+
+    <!-- Left Navigation Bar -->
+    <div class="left-navbar">
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#literature-survey">Literature Survey</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <!-- Add more sections as needed -->
+        </ul>
+    </div>
+
+    <!-- Main Content (Research Paper Sections) -->
+    <div class="main-content">
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <p>Content of the abstract goes here...</p>
+        </section>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Content of the introduction goes here...</p>
+        </section>
+
+        <section id="literature-survey">
+            <h2>Literature Survey</h2>
+            <p>Content of the literature survey goes here...</p>
+        </section>
+
+        <section id="methodology">
+            <h2>Methodology</h2>
+            <p>Content of the methodology goes here...</p>
+        </section>
+    </div>
+
+    <!-- Comment Section -->
+    <div id="comments-section">
+        <h3>Comments</h3>
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type a comment">
+        <button onclick="submitComment()">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
